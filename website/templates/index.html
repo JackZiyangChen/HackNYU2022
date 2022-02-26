@@ -12,6 +12,7 @@
     <header class="header">
       <div class="header-container">
         <h1 class="title">Letters Without Borders</h1>
+        <br>
         <nav>
             <button class="btn" id="homeBtn">
               Home
@@ -22,19 +23,23 @@
         </nav>
       </div>
     </header>
+    <br>
+    <center>
     <main class="main">
       <button class="btn btn-green btn-large" id="letterBtn">New Letter</button>
       <div class="letters-grid" id="letterGrid">    <!-- grid for displaying sent/received letters-->
+        <br>
         <form id="letter-survey">
           <label id="title-label">Subject</label>
-          <input type="text" name="title" id="title"  placeholder="give your post an optional title"><br>
+          <input type="text" name="title" id="title"  placeholder="Post Title" style="width: 450px"><br>
           <label id="content-label">Content</label>
-          <input type="text" name="content" id="content" placeholder="what's on your mind today?" required><br> 
+          <input type="text" name="content" id="content" placeholder="What's on your mind?" style="width: 450px;height:100px" required><br>
           <button type="submit" id="submitLetter">Send Letter</button>
        </form>
       </div>   
       <script src="script.js" defer></script>
     </main>
+    </center>
     <footer class="footer">
       <div class="github_link">
         <img src= "logo.png"> 
