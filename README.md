@@ -1,6 +1,6 @@
-# HackNYU2022 Project
+# HackNYU2022 Project - Letters without Borders
 
-#### Authors:
+## Authors
 * Jack Chen (Backend, Python)
 * Jack Lee (Frontend, HTML/CSS/JS)
 * Johnathan Zhou (Frontend, HTML/CSS/JS)
@@ -9,14 +9,14 @@
 ## Project Description
 The objective of our HackNYU2022 project is to create an application
 that promotes positivity through anonymously submitted messages
-which can be accessed by other users.
+which can be accessed by other users, who can respond to those messages.
 
 ## Architecture Overview
 Flask is the framework of the project. It allows for easier wiring of
 the front end and the back end, along with the database.
 
 ## Running the project
-* http://localhost:5000/
+http://localhost:5000/
 
 Running the project and pasting the link above in a web browser
 allows a user to access the local site. Alternatively, users
@@ -33,7 +33,7 @@ installation can be done through pip in the terminal/command prompt)
 
 ## SQL Database
 SQL database created using Flask and SQLAlchemy, database stored
-locally. (Needs explanation expansion)
+locally. 
 
 ## Contacts
 If you have any questions regarding the project, you can locate
