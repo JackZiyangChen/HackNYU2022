@@ -12,7 +12,7 @@ DB_NAME = 'database.db'
 def create_app():
     app = Flask(__name__)
 
-    app.config['SECRET_KEY'] = ''
+    app.config['SECRET_KEY'] = 'hello world'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'  # triple slash is a relative path
     db.init_app(app)
 
