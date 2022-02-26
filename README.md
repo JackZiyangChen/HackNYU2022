@@ -1,8 +1,8 @@
 # HackNYU2022 Project
 
 #### Authors:
-* Jack Chen (Frontend, HTML/CSS/JS)
-* Jack Lee (Backend, Python)
+* Jack Chen (Backend, Python)
+* Jack Lee (Frontend, HTML/CSS/JS)
 * Johnathan Zhou (Frontend, HTML/CSS/JS)
 * Brian Zou (Fullstack, Python/HTML)
 
