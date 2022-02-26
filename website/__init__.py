@@ -23,7 +23,7 @@ def create_app():
     app.register_blueprint(views, url_prefix="/")
 
 
-    from .flaskDB import Id, Post
+    from .flaskDB import User, Post
     create_database(app)
 
 
