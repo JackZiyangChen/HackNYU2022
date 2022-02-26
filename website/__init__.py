@@ -1,19 +1,37 @@
 import os
 
-from flask import Flask # pip install flask
-from flask_sqlalchemy import SQLAlchemy # pip install flask-sqlalchemy
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 from os import path
-from flask_login import LoginManager # pip install flask_login
+from flask_login import LoginManager
+
+db = SQLAlchemy()  # SQL Alchemy instance
+DB_NAME = 'database.db'
 
 
 def create_app():
     app = Flask(__name__)
+
+    app.config['SECRET_KEY'] = 'hello world'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'  # triple slash is a relative path
+    db.init_app(app)
+
 
 
     from .views import views
 
     app.register_blueprint(views, url_prefix="/")
 
-    # http://localhost:5000  - use this to hit in browser
+
+    from .flaskDB import User, Post
+    create_database(app)
+
 
     return app
+
+
+
+def create_database(app):
+    if not path.exists('website'+os.sep+DB_NAME):
+        db.create_all(app=app)
+        print('database created!')
