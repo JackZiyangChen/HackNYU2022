@@ -17,4 +17,3 @@ def create_app():
     # http://localhost:5000  - use this to hit in browser
 
     return app
-
