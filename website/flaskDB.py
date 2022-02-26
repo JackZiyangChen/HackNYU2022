@@ -23,21 +23,13 @@ class Post(db.Model):
     # def __repr__(self):
        # return f"User Id('{self.subject}', '{self.date_posted}'"
 
-
-
-
-
-
 letters = [
     {
         'subject': 'example 1',
         'content': 'content 1'
-
     },
     {
         'subject': 'example 2',
         'content': 'content 2'
     }
-
-
 ]
