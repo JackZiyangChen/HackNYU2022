@@ -6,12 +6,12 @@
     <meta name="description" content="Hack NYU 2022 project">
     <div>
     <p style="float: left;">
-    <img src="flying_letter.jpg" height="100px" width="100px" border="1px">
+    <img src={{url_for('static', filename="flying_letter.jpg")}} height="100px" width="100px" border="1px">
     </p>
     <p><title>Letters Without Borders</title></p>
     </div>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href={{url_for('static', filename="style.css")}} />
   </head>
   <body>
     <header class="header">
@@ -42,7 +42,7 @@
           <button type="submit" id="submitLetter">Send Letter</button>
        </form>
       </div>   
-      <script src="script.js" defer></script>
+      <script src={{url_for('static', filename="script.js")}} defer></script>
     </main>
     </center>
     <footer class="footer">
