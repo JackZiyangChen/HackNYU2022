@@ -16,6 +16,9 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'  # triple slash is a relative path
     db.init_app(app)
 
+    from .flaskDB import User, Post
+    create_database(app)
+
 
 
     from .views import views
@@ -25,8 +28,6 @@ def create_app():
     app.register_blueprint(cookies, url_prefix="/")
 
 
-    from .flaskDB import User, Post
-    create_database(app)
 
 
     return app

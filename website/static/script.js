@@ -10,4 +10,11 @@ function displayPrompt() {
   lettersGrid.classList.add('active')
 }
 
+function displayMessage() {
+  messageGrid.classList.add('active')
+}
+
+pullBtn.addEventListener('click', () => displayMessage)
+
 addLetterBtn.addEventListener('click', () => displayPrompt())
+

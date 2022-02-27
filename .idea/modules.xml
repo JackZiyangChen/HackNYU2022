@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/LetterWithoutBoarder.iml" filepath="$PROJECT_DIR$/.idea/LetterWithoutBoarder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/LetterWithoutBorder.iml" filepath="$PROJECT_DIR$/.idea/LetterWithoutBorder.iml" />
     </modules>
   </component>
 </project>

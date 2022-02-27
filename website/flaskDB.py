@@ -5,8 +5,6 @@ from . import db
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    subject = db.Column(db.String(20), unique=True, nullable=False)
-    content = db.Column(db.String(120), unique=True, nullable=False)
     posts = db.relationship('Post')
 
     # def __repr__(self):

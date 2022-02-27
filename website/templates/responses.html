@@ -5,10 +5,10 @@
     <main class="main">
         <ul>
         {% for post in user.posts %}
-            {% if post.is_pulled}
-            <li></li>
+            {% if post.is_pulled %}
+            <li>{{ post.subject }}: {{ post.content }}</li>
             {% else %}
-            <li></li>
+            <li>{{ post.subject }}: {{ post.content }}</li>
             {% endif %}
         {% endfor %}
         </ul>

@@ -4,7 +4,7 @@
     <center>
     <main class="main">
         <div class="container">
-            <button class="btn btn-green btn-large" id="pullBtn">Pull a Letter</button>
+            <a href="/pull"><button class="btn btn-green btn-large" id="pullBtn">Pull a Letter</button></a>
           <button class="btn btn-green btn-large" id="letterBtn">New Letter</button>
         </div>
         <br>
@@ -18,7 +18,10 @@
           <button type="submit" id="submitLetter">Send Letter</button>
        </form>
       </div>
-        <div class="container message-grid" id="messageGrid" ></div>
+        <div class="container message-grid" id="messageGrid" >
+            <h3>post content</h3>
+            {{post.content}}
+        </div>
       <script src={{url_for('static', filename="script.js")}} defer></script>
     </main>
     </center>
