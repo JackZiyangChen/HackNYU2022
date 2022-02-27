@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+    {% block page_name %}My Response{% endblock %}
+    {% block content %}
+    <center>
+    <main class="main">
+        <ul>
+        {% for post in user.posts %}
+            {% if post.is_pulled}
+            <li></li>
+            {% else %}
+            <li></li>
+            {% endif %}
+        {% endfor %}
+        </ul>
+    </main>
+    </center>
+    {% endblock %}

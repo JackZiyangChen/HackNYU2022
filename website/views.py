@@ -32,16 +32,22 @@ def home():
     return render_template('index.html')
 
 
+@views.route('/responses', methods=['GET','POST'])
+def response_page():
+
+
+
+    return render_template('responses.html')
+
+
 def push_response(db, original, response):
     response.original_post = original.id
 
     db.session.add(response)
     db.session.commit()
 
-    flash("Thank you for your response", category=success)
+    flash("Thank you for your response", category="success")
 
-
-    pass
 
 
 def pull_post():
