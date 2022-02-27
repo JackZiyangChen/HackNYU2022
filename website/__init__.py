@@ -19,8 +19,10 @@ def create_app():
 
 
     from .views import views
+    from .cookies import cookies
 
     app.register_blueprint(views, url_prefix="/")
+    app.register_blueprint(cookies, url_prefix="/")
 
 
     from .flaskDB import User, Post
